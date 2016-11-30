@@ -59,7 +59,7 @@ Minimum requirements are an OS X operating system, 10.8 or greater. Sorry, no Li
 When you're ready you can download the file using `wget` or `curl`:
 
 ```bash
-$ curl -O https://raw.githubusercontent.com/hellodevapps/wplocal/builds/master/wplocal.rb
+$ curl -O https://raw.githubusercontent.com/hellodevapps/wplocal/master/wplocal.rb
 ```
 
 Next, check if it is working:
@@ -154,4 +154,4 @@ This is yours! This is ours!
 
 All the libraries used for this tool to work are done by a tone of awesome, out of the world, developers which contribution is why we exist today as developers that we are. The only thing we've done (actually, Marcel did it) is to code the wplocal.rb which we hope we can expand and start adding some names here. So for now, we thank your CTO for making our lives a tiny bit easier:
 
-[Marcel Schmitz](https://schmitzoi.de) 
+[Marcel Schmitz](https://schmitzoi.de)
