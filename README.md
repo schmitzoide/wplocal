@@ -1,7 +1,9 @@
 WPLOCAL
 ======
 
-WPLOCAL is a command-line tool for creating and managing very fast local WordPress installations. You can create an instante in merely 8 seconds with its dedicated folder and database, without using any complicated or cumbersome platform such as Docker or Vagrant. Instead, it uses [Laravel Valet](https://laravel.com/docs/5.3/valet) (which uses [Caddy](https://caddyserver.com) and [DNSMasq](https://en.wikipedia.org/wiki/Dnsmasq)), MariaDB, the mighty [wp-cli](http://wp-cli.org) and PHP7 libraries all through composer and brew package managers.
+*CREATE AND RUN A WORDPRESS INSTANCE LOCALLY WITHIN 8 SECONDS!*
+
+*WPLOCAL* is a command-line tool for creating and managing very fast local WordPress installations. You can create an instante in merely 8 seconds with its dedicated folder and database, without using any complicated or cumbersome platform such as Docker or Vagrant. Instead, it uses [Laravel Valet](https://laravel.com/docs/5.3/valet) (which uses [Caddy](https://caddyserver.com) and [DNSMasq](https://en.wikipedia.org/wiki/Dnsmasq)), MariaDB, the mighty [wp-cli](http://wp-cli.org) and PHP7 libraries all through composer and brew package managers.
 
 For the latest news on this project, follow [@hellodevapps on Twitter](https://twitter.com/hellodevapps), me [@schmitzoide on Twitter](https://twitter.com/hellodevapps) or [visit my blog](http://schmitzoide.blog). There will be a roadmap soon here for an overview of what's planned for upcoming releases, and also with directions on how to contribute to this project and where to work on first. THERE'S A LOT TO DO! For now, I just want to test this out and get a grip of how it is working as a basic simple and very useful tool and take it to higher levels such us remote instance replications, cloning, local sharing, automatic publications and more.
 
@@ -9,7 +11,7 @@ All this comes out of our daily working day at [hellodev](https://hellodev.us), 
 
 ## Using
 
-WPLOCAL goal is to provide a command-line interface for creating a local WordPress installation with one simple line: `wplocal create -w mysite`. This will create a folder named mysite, and in it, the latest WordPress release with a database called `mysite`, and a running site at `http://mysite.dev`.
+*WPLOCAL* goal is to provide a command-line interface for creating a local WordPress installation with one simple line: `wplocal create -w mysite`. This will create a folder named mysite, and in it, the latest WordPress release with a database called `mysite`, and a running site at `http://mysite.dev`.
 
 ```bash
 $ wplocal create -w mysite
