@@ -33,7 +33,7 @@ def parse_options
   when "help"
       help
   when "version"
-      puts 'v0.1'.green + ' by Marcel Schmitz'.blue + ' @schmitzoide'.yellow	 + ' hellodev.us'.red
+      puts 'v0.2'.green + ' by Marcel Schmitz'.blue + ' @schmitzoide'.yellow	 + ' hellodev.us'.red
   else
       help
   end

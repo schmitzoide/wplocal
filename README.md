@@ -59,14 +59,14 @@ Minimum requirements are an OS X operating system, 10.8 or greater. Sorry, no Li
 When you're ready you can download the complete project into a folder and open um Terminal inside that folder. Then you need to do this simple lines of commands:
 
 ```bash
-$ chmod +x wplocal.rb
+$ chmod +x install.sh
 $ ./install.sh
 ```
 
 If it all went ok (no reason not to), the script will automatically execute `wplocal version` and expect something like this to come out:
 
 ```bash
-v0.1 by Marcel Schmitz @schmitzoide hellodev.us
+v0.2 by Marcel Schmitz @schmitzoide hellodev.us
 ALL DONE!
 ```
 
