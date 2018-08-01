@@ -6,7 +6,13 @@ def destroy (cmd)
 	puts 'Going to uninstall website on folder ' + current + '/' + site + ' and delete the database. Proceed? (y)es / (n)o'
 	input = STDIN.gets.chomp
 	if (input == "yes" or input == "y")
-		puts 'Deleting database...'.yellow
+		puts 'Delete link to folder...'.yellow
+		system("valet unlink " + site);
+		if $?.exitstatus != 0
+            puts "✖︎︎ Error unlinking site, aborting :-(".red
+            abort
+         end
+        puts 'Deleting database...'.yellow
 		system("mysql.server start && mysql -u root -e 'drop database " + site + " '");
 		if $?.exitstatus != 0
 	       puts "✖︎︎ Error deleting database, aborting :-(".red

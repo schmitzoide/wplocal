@@ -33,7 +33,7 @@ def create (cmd)
        abort
 	end
 	puts 'Starting Valet...'.yellow
-	system("cd " + current + "/" + site + " && valet link " + site)
+	system("cd " + current + "/" + site + " && valet link " + site + " --secure")
 	if $?.exitstatus != 0
        puts "✖︎︎ Error creating wp-config.php :-(".red
        abort

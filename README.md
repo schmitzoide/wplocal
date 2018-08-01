@@ -16,8 +16,8 @@ $ wplocal create -w mysite
 Going to install WordPress on folder /Users/marcelschmitz/Documents/Websites/mysite accessible at http://mysite.dev...
 Creating folder...
 Installing WordPress here...
-Downloading WordPress 4.6.1 (en_US)...
-Using cached file '/Users/marcelschmitz/.wp-cli/cache/core/wordpress-4.6.1-en_US.tar.gz'...
+Downloading WordPress 4.9.7 (en_US)...
+Using cached file '/Users/marcelschmitz/.wp-cli/cache/core/wordpress-4.9.7-en_US.tar.gz'...
 Success: WordPress downloaded.
 ✔︎ Done
 Creating database...
@@ -77,29 +77,41 @@ $ wplocal setup
 Going to check for installed compoments...
 
 
-## Checking for Brew
-Homebrew 1.1.1
-Homebrew/homebrew-core (git revision 6058; last commit 2016-11-22)
+## Checking for 🍺 Brew
+Homebrew 1.7.1
+Homebrew/homebrew-core (git revision 92d57; last commit 2018-08-01)
 ✔︎ Check
+Update available?
+Already up-to-date.
 
 
 ## Checking for Composer
-Composer version 1.2.2 2016-11-03 17:43:15
+Composer version 1.5.2 2017-09-11 16:59:25
 ✔︎ Check
 
 
 ## Checking for MySQL
-mysql  Ver 15.1 Distrib 10.1.19-MariaDB, for osx10.12 (x86_64) using readline 5.1
+mysql  Ver 15.1 Distrib 10.2.10-MariaDB, for osx10.13 (x86_64) using readline 5.1
 ✔︎ Check
 
 
 ## Checking for Laravel Valet
-Laravel Valet version 1.1.22
+Password:
+Laravel Valet 2.0.12
 ✔︎ Check
 
 
 ## Checking for WP-CLI
-WP-CLI 0.25.0
+WP-CLI 1.5.1
+✔︎ Check
+
+
+## Updating everything to the latest version
+Changed current directory to /Users/marcelschmitz/.composer
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+Nothing to install or update
+Generating autoload files
 ✔︎ Check
 
 
@@ -111,11 +123,11 @@ GEM dependencies...
 
 Pinging .dev...
 PING *.dev (127.0.0.1): 56 data bytes
-64 bytes from 127.0.0.1: icmp_seq=0 ttl=64 time=0.078 ms
+64 bytes from 127.0.0.1: icmp_seq=0 ttl=64 time=0.036 ms
 
 --- *.dev ping statistics ---
 1 packets transmitted, 1 packets received, 0.0% packet loss
-round-trip min/avg/max/stddev = 0.078/0.078/0.078/0.000 ms
+round-trip min/avg/max/stddev = 0.036/0.036/0.036/0.000 ms
 
 ✔︎ ALL GOOD! Hurray!
 

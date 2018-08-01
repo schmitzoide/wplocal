@@ -9,7 +9,8 @@ def fix
 	begin
 		system("sudo apachectl stop")
         system("export PATH=\"$PATH:$HOME/.composer/vendor/bin\"")
-		system("composer global remove laravel/valet")
+        system("composer global update")
+        system("composer global remove laravel/valet")
 		system("composer global require laravel/valet")
 		system("valet install")
 		system("valet start")

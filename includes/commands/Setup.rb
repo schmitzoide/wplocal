@@ -55,7 +55,16 @@ def setup
 	else
 	   puts "✖︎︎ Not installed".red
 	   install 'wpcli'
-	end
+    end
+	puts ' '
+	puts ' '
+    puts '## Updating everything to the latest version'.yellow
+    system("composer global update")
+	if $?.exitstatus == 0
+		puts "✔︎ Check".green
+	else
+	    puts "✖︎? Unable to update...".red
+    end
 	puts ' '
 	puts ' '
 	puts '## Checking for dependencies'.yellow
