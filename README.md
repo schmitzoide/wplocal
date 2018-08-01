@@ -3,9 +3,9 @@ WPLOCAL
 
 WPLOCAL is a command-line tool for creating and managing very fast local WordPress installations. You can create an instante in merely 8 seconds with its dedicated folder and database, without using any complicated or cumbersome platform such as Docker or Vagrant. Instead, it uses [Laravel Valet](https://laravel.com/docs/5.3/valet) (which uses [Caddy](https://caddyserver.com) and [DNSMasq](https://en.wikipedia.org/wiki/Dnsmasq)), MariaDB, the mighty [wp-cli](http://wp-cli.org) and PHP7 libraries all through composer and brew package managers.
 
-For the latest news on this project, follow [@hellodevapps on Twitter](https://twitter.com/hellodevapps) or [visit my blog](http://schmitzoi.de). There will be a roadmap soon here for an overview of what's planned for upcoming releases, and also with directions on how to contribute to this project and where to work on first. THERE'S A LOT TO DO! For now, I just want to test this out and get a grip of how it is working as a basic simple and very useful tool and take it to higher levels such us remote instance replications, cloning, local sharing, automatic publications and more.
+For the latest news on this project, follow [@hellodevapps on Twitter](https://twitter.com/hellodevapps), me [@schmitzoide on Twitter](https://twitter.com/hellodevapps) or [visit my blog](http://schmitzoide.blog). There will be a roadmap soon here for an overview of what's planned for upcoming releases, and also with directions on how to contribute to this project and where to work on first. THERE'S A LOT TO DO! For now, I just want to test this out and get a grip of how it is working as a basic simple and very useful tool and take it to higher levels such us remote instance replications, cloning, local sharing, automatic publications and more.
 
-All this comes out of our daily working day at [hellodev](https://hellodev.us), a WordPress specialised agency from Porto, Portugal, as a contribution to the community. Please use and abuse!
+All this comes out of our daily working day at [hellodev](https://hellodev.us), a WordPress specialised agency from Porto, Portugal, as a contribution to the community.
 
 ## Using
 
@@ -52,34 +52,22 @@ This took 1 second to complete. It is really just that simple.
 
 ## Installing
 
-To install this command-line tool you'll need to download the .rb file and install it as a executable inside your Mac OS(x) platform.
+To install this command-line tool you'll need to download the complete project run the install script.
 
 Minimum requirements are an OS X operating system, 10.8 or greater. Sorry, no Linux or UNIX support yet. More on that later!
 
-When you're ready you can download the file using `wget` or `curl`:
-
-```bash
-$ curl -O https://raw.githubusercontent.com/hellodevapps/wplocal/master/wplocal.rb
-```
-
-Next, check if it is working:
-
-```bash
-$ ./wplocal.rb version
-```
-
-To use WPLOCAL from the command line by typing `wplocal`, make the file executable and move it to the executable path in your sytem like this:
+When you're ready you can download the complete project into a folder and open um Terminal inside that folder. Then you need to do this simple lines of commands:
 
 ```bash
 $ chmod +x wplocal.rb
-$ sudo mv wplocal.rb /usr/local/bin/wplocal
+$ ./install.sh
 ```
 
-If it all went ok (no reason not to), execute  `wplocal version` and expect something like this to come out:
+If it all went ok (no reason not to), the script will automatically execute `wplocal version` and expect something like this to come out:
 
 ```bash
-$ wplocal version
 v0.1 by Marcel Schmitz @schmitzoide hellodev.us
+ALL DONE!
 ```
 
 As a final step, you need to install all the components that WPLOCAL needs to run. Well, you just need to type a command, WPLOCAL will do all the dirty work for you:
