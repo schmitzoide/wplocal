@@ -54,11 +54,11 @@ This took 1 second to complete. It is really just that simple.
 
 ## Installing
 
-To install this command-line tool you'll need to download the complete project run the install script.
+To install this command-line tool you'll need to download the complete project and run the install script.
 
 Minimum requirements are an OS X operating system, 10.8 or greater. Sorry, no Linux or UNIX support yet. More on that later!
 
-When you're ready you can download the complete project into a folder and open um Terminal inside that folder. Then you need to do this simple lines of commands:
+When you're ready you can download the complete project into a folder and lauch the terminal inside that folder. Then you need to do this simple lines of commands:
 
 ```bash
 $ chmod +x install.sh
