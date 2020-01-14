@@ -18,6 +18,16 @@ def setup
 	end
 	puts ' '
 	puts ' '
+	puts '## Checking for PHP'.yellow
+	system("php --version")
+	if $?.exitstatus == 0
+		   puts "✔︎ Check".green
+	else
+	   puts "✖︎︎ Not installed".red
+	   install 'php'
+	end
+    puts ' '
+	puts ' '
 	puts '## Checking for Composer'.yellow
 	system("composer --version")
 	if $?.exitstatus == 0
@@ -71,8 +81,8 @@ def setup
 	install 'dep'
 	puts ' '
 	puts ' '
-	puts 'Pinging .dev...'.yellow
-	system('ping -c 1 *.dev')
+	puts 'Pinging .test...'.yellow
+	system('ping -c 1 *.test')
 	puts ' '
 	puts "✔︎ ALL GOOD! Hurray!".green
 	puts ' '

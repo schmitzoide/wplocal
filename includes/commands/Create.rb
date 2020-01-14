@@ -3,7 +3,7 @@ def create (cmd)
 	site = cmd.to_s
 	current = Dir.pwd
 
-	puts 'Going to install WordPress on folder ' + current + '/' + site + ' accessible at http://' + site + '.dev...'
+	puts 'Going to install WordPress on folder ' + current + '/' + site + ' accessible at http://' + site + '.test...'
 
 	puts 'Creating folder...'.yellow
 	system ("mkdir -p " + current + "/" + site)
@@ -39,7 +39,7 @@ def create (cmd)
        abort
 	end
 	puts "✔︎ All Done!".green
-	system ("open http://" + site + ".dev")
+	system ("open http://" + site + ".test")
 
 	if $?.exitstatus == 0
 	   puts "✔︎ Installed".green

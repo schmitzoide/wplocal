@@ -11,11 +11,11 @@ All this comes out of our daily working day at [hellodev](https://hellodev.us), 
 
 ## Using
 
-*WPLOCAL* goal is to provide a command-line interface for creating a local WordPress installation with one simple line: `wplocal create -w mysite`. This will create a folder named mysite, and in it, the latest WordPress release with a database called `mysite`, and a running site at `http://mysite.dev`.
+*WPLOCAL* goal is to provide a command-line interface for creating a local WordPress installation with one simple line: `wplocal create -w mysite`. This will create a folder named mysite, and in it, the latest WordPress release with a database called `mysite`, and a running site at `http://mysite.test`.
 
 ```bash
 $ wplocal create -w mysite
-Going to install WordPress on folder /Users/marcelschmitz/Documents/Websites/mysite accessible at http://mysite.dev...
+Going to install WordPress on folder /Users/marcelschmitz/Documents/Websites/mysite accessible at http://mysite.test...
 Creating folder...
 Installing WordPress here...
 Downloading WordPress 4.9.7 (en_US)...
@@ -123,11 +123,11 @@ GEM dependencies...
 ✔︎ Installed
 
 
-Pinging .dev...
-PING *.dev (127.0.0.1): 56 data bytes
+Pinging .test...
+PING *.test (127.0.0.1): 56 data bytes
 64 bytes from 127.0.0.1: icmp_seq=0 ttl=64 time=0.036 ms
 
---- *.dev ping statistics ---
+--- *.test ping statistics ---
 1 packets transmitted, 1 packets received, 0.0% packet loss
 round-trip min/avg/max/stddev = 0.036/0.036/0.036/0.000 ms
 

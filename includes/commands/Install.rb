@@ -25,6 +25,14 @@ def install (mod)
 		else
 	       puts "✖︎︎ Not installed".red
 		end
+	when "php"
+		puts 'PHP...'.yellow
+		system("brew install php")
+		if $?.exitstatus == 0
+		   puts "✔︎ Installed".green
+		else
+	       puts "✖︎︎ Not installed".red
+		end		
     when "mariadb"
 		puts 'MariaDB...'.yellow
 		system("brew install mariadb")
